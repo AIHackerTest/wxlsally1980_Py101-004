@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<style type="text/css">
+h1 {color:blue; 
+    font-size:28px; 
+    position:absolute;
+    left:600px;
+    top:150px}
+form {font-size:10px; position:absolute;
+    left:530px;
+    top:250px}
+
+
+</style>
+</head>
+
+<body>
+
+<h1>天气查询系统 </h1>
+
+<form action="/user_request" method="GET">
+城市:
+<input type="text" name="city">
+<input type="submit" name="query" value="查询">
+<input type="submit" name="history" value="历史">
+<input type="submit" name="help" value="帮助">
+
+</form> 
+{% block content %}
+{% endblock %}
+</body>
+</html>
